@@ -7,12 +7,7 @@ class Topic extends Model
     protected $fillable = [
         'title',
         'body',
-        'user_id',
         'category_id',
-        'reply_count',
-        'view_count',
-        'last_reply_user_id',
-        'order',
         'excerpt',
         'slug',
     ];
@@ -34,11 +29,11 @@ class Topic extends Model
             case 'recent':
                 $query->recent();
                 break;
-
             default:
                 $query->recentReplied();
                 break;
         }
+
         // 预加载防止 N+1 问题
         return $query->with('user', 'category');
     }
