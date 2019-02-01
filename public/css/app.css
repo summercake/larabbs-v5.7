@@ -16300,6 +16300,8 @@ body {
   max-width: 100%;
 }
 
+/* Topic Show Page */
+
 .simditor-body,
 .topic-body {
   font-size: 15px;
@@ -16750,5 +16752,15 @@ body {
 .topic-body pre code:before,
 .topic-body pre code:after {
   content: normal;
+}
+
+.topics-show-page .card {
+  padding: 15px;
+}
+
+.topics-show-page .card h1 {
+  margin: 0.4em auto 0.6em;
+  font-size: 28px;
+  line-height: 38px;
 }
 
