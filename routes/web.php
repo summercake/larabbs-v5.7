@@ -36,9 +36,11 @@ Route::get('email/verify', 'Auth\VerificationController@show')->name('verificati
 Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
 Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
+// User Route
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
 
-
-
-
+// Topic Route
 Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+
+// Category Route
+Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
