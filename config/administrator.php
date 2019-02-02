@@ -42,9 +42,11 @@ return array(
             'roles',
             'permissions',
         ],
-        //'内容管理' => [
-        //    'posts' // 对应需要创建的文件：`config/administrator/posts.php`
-        //]
+        '内容管理' => [
+            'categories',
+            'topics',
+            'replies',
+        ],
     ],
 
     /*
