@@ -55,3 +55,4 @@ Route::resource('replies', 'RepliesController', ['only' => ['store', 'destroy']]
 
 // database notification
 Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);
+Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
