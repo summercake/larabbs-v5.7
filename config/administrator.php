@@ -38,11 +38,13 @@ return array(
      */
     'menu' => [
         '用户管理' => [
-            'users' // 对应需要创建的文件：`config/administrator/users.php`
+            'users', // 对应需要创建的文件：`config/administrator/users.php`
+            'roles',
+            'permissions',
         ],
-        '内容管理' => [
-            'posts' // 对应需要创建的文件：`config/administrator/posts.php`
-        ]
+        //'内容管理' => [
+        //    'posts' // 对应需要创建的文件：`config/administrator/posts.php`
+        //]
     ],
 
     /*
